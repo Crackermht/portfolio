@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Si Thu Aung | Network & IT Specialist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --accent: #38bdf8; /* Sky Blue */
+            --text-main: #f1f5f9;
+            --text-dim: #94a3b8;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.7;
+            scroll-behavior: smooth;
+        }
+
+        /* --- LAYOUT --- */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        nav {
+            padding: 2rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 700;
+            letter-spacing: -1px;
+            font-size: 1.2rem;
+            color: var(--accent);
+        }
+
+        .nav-links a {
+            color: var(--text-dim);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover { color: var(--accent); }
+
+        /* --- HERO --- */
+        .hero {
+            padding: 8rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            letter-spacing: -2px;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, #fff, #64748b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-dim);
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .badge {
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            border: 1px solid var(--accent);
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        /* --- SECTIONS --- */
+        section { padding: 6rem 0; }
+
+        .section-label {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            font-weight: 700;
+        }
+
+        /* --- CARDS --- */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 2.5rem;
+            border-radius: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            border-color: var(--accent);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .card h3 { margin-bottom: 1rem; font-size: 1.4rem; }
+        .card p { color: var(--text-dim); font-size: 1rem; }
+
+        /* --- SKILLS PILLS --- */
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        .tag {
+            background: #0f172a;
+            border: 1px solid var(--border);
+            padding: 0.3rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: var(--text-main);
+        }
+
+        /* --- CONTACT --- */
+        .cta-box {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            border: 1px solid var(--accent);
+            padding: 4rem;
+            border-radius: 24px;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: var(--bg);
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .btn-primary:hover {
+            opacity: 0.9;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 4rem 0;
+            border-top: 1px solid var(--border);
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="logo">SITHU.AUNG</div>
+            <div class="nav-links">
+                <a href="#about">Experience</a>
+                <a href="#skills">Tech Stack</a>
+                <a href="#projects">Expertise</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <header class="hero">
+            <span class="badge">Available for Projects</span>
+            <h1>Si Thu Aung</h1>
+            <p>Advancing network infrastructure and specialized IT support for diplomatic and secure environments.</p>
+            <a href="mailto:mohit.sithu@gmail.com" class="btn-primary">Let's Connect</a>
+        </header>
+
+        <section id="about">
+            <span class="section-label">Professional Background</span>
+            <h2 class="section-title">IT Support & Systems</h2>
+            <div class="card" style="max-width: 800px;">
+                <p>Currently serving as an <strong>IT Support Professional</strong> at a diplomatic mission, I manage critical technology infrastructure where security and uptime are paramount. My focus is on delivering seamless hardware support and robust system administration across diverse operating systems.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <span class="section-label">Technical Stack</span>
+            <h2 class="section-title">Core Capabilities</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Network Administration</h3>
+                    <p>Configuration of advanced routing protocols and secure gateways.</p>
+                    <div class="skill-tags">
+                        <span class="tag">Linux/VPS</span>
+                        <span class="tag">Routing</span>
+                        <span class="tag">Firewalls</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Systems & Virtualization</h3>
+                    <p>Managing Windows/Linux environments and virtualized server deployments.</p>
+                    <div class="skill-tags">
+                        <span class="tag">VirtualBox</span>
+                        <span class="tag">Server Mgmt</span>
+                        <span class="tag">OS Security</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Hardware Engineering</h3>
+                    <p>Expert diagnostics, PC assembly, and infrastructure procurement.</p>
+                    <div class="skill-tags">
+                        <span class="tag">Diagnostics</span>
+                        <span class="tag">IT Procurement</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <span class="section-label">Strategic Projects</span>
+            <h2 class="section-title">Case Studies</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Advanced Routing Framework</h3>
+                    <p>Implemented customized network solutions to ensure high-speed, secure internet access in restricted environments using enterprise-grade proxy protocols.</p>
+                </div>
+                <div class="card">
+                    <h3>Technical Education Platform</h3>
+                    <p>Launched a digital sharing initiative to improve IT literacy in Myanmar, translating complex network concepts into accessible technical guides.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="cta-box">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Ready to collaborate?</h2>
+                <p style="color: var(--text-dim); margin-bottom: 2rem;">Available for consultation on network architecture and system support.</p>
+                <a href="mailto:mohit.sithu@gmail.com" style="color: var(--accent); font-size: 1.5rem; font-weight: 700;">mohit.sithu@gmail.com</a>
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2026 Si Thu Aung | Built for Performance
+        </footer>
+    </div>
+
+</body>
+</html>
